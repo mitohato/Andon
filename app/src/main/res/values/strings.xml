@@ -3,4 +3,5 @@
     <string name="title_home">Home</string>
     <string name="title_union">Union</string>
     <string name="title_notifications">Notifications</string>
+    <string name="user_icon_image">user icon image</string>
 </resources>
