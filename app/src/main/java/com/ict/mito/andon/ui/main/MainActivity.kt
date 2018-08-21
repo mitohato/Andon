@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.ict.mito.andon.R
 import com.ict.mito.andon.ui.home.HomeFragment
+import com.ict.mito.andon.ui.local.LocalFragment
 import com.ict.mito.andon.ui.notification.NotificationFragment
 import com.ict.mito.andon.ui.union.UnionFragment
 import kotlinx.android.synthetic.main.activity_main.navigation
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
                     }
                     R.id.navigation_union -> {
                         fragment = UnionFragment.newInstance()
+                    }
+                    R.id.navigation_local -> {
+                        fragment = LocalFragment.newInstance()
                     }
                 }
                 val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
