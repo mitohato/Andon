@@ -9,17 +9,17 @@ import androidx.lifecycle.ViewModelProviders
 import com.ict.mito.andon.R
 
 class LocalFragment : Fragment() {
-    
+
     companion object {
         fun newInstance() = LocalFragment()
     }
-    
+
     private lateinit var viewModel: LocalViewModel
-    
+
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(
                 R.layout.local_fragment,
@@ -27,11 +27,10 @@ class LocalFragment : Fragment() {
                 false
         )
     }
-    
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(LocalViewModel::class.java)
         // TODO: Use the ViewModel
     }
-    
 }
