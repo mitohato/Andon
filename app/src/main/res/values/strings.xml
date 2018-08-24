@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Andon</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_union">Union</string>
+    <string name="title_local">Local</string>
     <string name="title_notifications">Notifications</string>
+    <string name="user_icon_image">user icon image</string>
+    <string name="notification_id">notification id</string>
 </resources>
